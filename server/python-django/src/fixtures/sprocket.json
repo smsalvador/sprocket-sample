@@ -1,0 +1,1545 @@
+[
+  {
+    "model": "sprocket.sprocket",
+    "pk": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+    "fields": {
+      "created_at": "2023-08-24T17:18:15.119Z",
+      "updated_at": "2023-08-24T17:18:15.119Z",
+      "teeth": 5,
+      "pitch_diameter": "5.00",
+      "outside_diameter": "6.00",
+      "pitch": "1.00",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "sprocket.sprocket",
+    "pk": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+    "fields": {
+      "created_at": "2023-08-24T17:43:49.268Z",
+      "updated_at": "2023-08-24T17:43:49.268Z",
+      "teeth": 5,
+      "pitch_diameter": "5.50",
+      "outside_diameter": "6.50",
+      "pitch": "1.50",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "sprocket.sprocket",
+    "pk": "5d7af4f5-8303-480f-b764-2886b69411fb",
+    "fields": {
+      "created_at": "2023-08-24T17:48:55.856Z",
+      "updated_at": "2023-08-24T17:48:55.856Z",
+      "teeth": 8,
+      "pitch_diameter": "10.00",
+      "outside_diameter": "12.00",
+      "pitch": "1.50",
+      "description": "Sprocket prototype",
+      "is_active": false
+    }
+  },
+  {
+    "model": "sprocket.sprocket",
+    "pk": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+    "fields": {
+      "created_at": "2023-08-24T17:44:03.474Z",
+      "updated_at": "2023-08-24T17:46:56.580Z",
+      "teeth": 5,
+      "pitch_diameter": "5.80",
+      "outside_diameter": "6.80",
+      "pitch": "1.80",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "sprocket.sprocket",
+    "pk": "e6765bc0-e2ef-44c1-9557-cb00b15fe33c",
+    "fields": {
+      "created_at": "2023-08-24T17:48:12.038Z",
+      "updated_at": "2023-08-24T17:48:12.038Z",
+      "teeth": 6,
+      "pitch_diameter": "6.70",
+      "outside_diameter": "7.50",
+      "pitch": "1.20",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactory",
+    "pk": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+    "fields": {
+      "created_at": "2023-08-24T17:49:39.835Z",
+      "updated_at": "2023-08-24T17:49:39.835Z",
+      "name": "West Coast Sprocket Factory",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactory",
+    "pk": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+    "fields": {
+      "created_at": "2023-08-24T17:49:23.998Z",
+      "updated_at": "2023-08-24T17:49:23.998Z",
+      "name": "East Coast Sprocket Factory",
+      "description": "",
+      "is_active": true
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactory",
+    "pk": "36aa83de-7bd7-4343-8882-7a30473311f1",
+    "fields": {
+      "created_at": "2023-08-24T17:50:13.426Z",
+      "updated_at": "2023-08-24T17:50:13.426Z",
+      "name": "South-America Sprocket Factory",
+      "description": "",
+      "is_active": false
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "0260c22f-f579-4abe-bf6b-9c1c9b890d2b",
+    "fields": {
+      "created_at": "2023-08-01T12:04:00Z",
+      "updated_at": "2023-08-01T12:04:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "027a76a3-09dc-4f12-bea2-84bd2c3c7c16",
+    "fields": {
+      "created_at": "2023-08-01T12:16:00Z",
+      "updated_at": "2023-08-01T12:16:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "034f621a-1b85-4525-91ae-075839c539d4",
+    "fields": {
+      "created_at": "2023-08-01T12:05:00Z",
+      "updated_at": "2023-08-01T12:05:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "03b64d50-8b02-4bdc-a0d6-e70752a90644",
+    "fields": {
+      "created_at": "2023-08-01T12:01:00Z",
+      "updated_at": "2023-08-01T12:01:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "079946f6-9ebf-418e-8763-9c1ca2cf088b",
+    "fields": {
+      "created_at": "2023-08-01T12:10:00Z",
+      "updated_at": "2023-08-01T12:10:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "0a987dd9-f128-4e99-9e5a-f6d2a20f1871",
+    "fields": {
+      "created_at": "2023-08-01T12:00:00Z",
+      "updated_at": "2023-08-01T12:00:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "0cf6e48f-b60d-4971-843f-935e65736986",
+    "fields": {
+      "created_at": "2023-08-01T12:12:00Z",
+      "updated_at": "2023-08-01T12:12:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "0fbadaef-b281-4644-9585-331b5df3fe18",
+    "fields": {
+      "created_at": "2023-08-01T12:17:00Z",
+      "updated_at": "2023-08-01T12:17:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "10ffa51d-7981-4805-ad9d-32d6147e0a6e",
+    "fields": {
+      "created_at": "2023-08-01T12:03:00Z",
+      "updated_at": "2023-08-01T12:03:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 30,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "1244c7e2-5e71-4b55-a2e9-0f16992c0ad6",
+    "fields": {
+      "created_at": "2023-08-01T12:02:00Z",
+      "updated_at": "2023-08-01T12:02:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "12fd8346-cd91-4562-991b-c5f78398a471",
+    "fields": {
+      "created_at": "2023-08-01T12:24:00Z",
+      "updated_at": "2023-08-01T12:24:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "1493d8d4-6578-47f1-82df-88a0eedc13a2",
+    "fields": {
+      "created_at": "2023-08-01T12:24:00Z",
+      "updated_at": "2023-08-01T12:24:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "18e0a254-5fee-4b1b-ad59-33f8f2896fbd",
+    "fields": {
+      "created_at": "2023-08-01T12:02:00Z",
+      "updated_at": "2023-08-01T12:02:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "19433ba7-8825-413d-a31d-c881578fc7df",
+    "fields": {
+      "created_at": "2023-08-01T12:21:00Z",
+      "updated_at": "2023-08-01T12:21:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "1ae35092-6200-42ef-a9d2-f913a52578af",
+    "fields": {
+      "created_at": "2023-08-01T12:27:00Z",
+      "updated_at": "2023-08-01T12:27:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "1d4d7d5c-7f15-4b37-b48b-2e2d80d40fe7",
+    "fields": {
+      "created_at": "2023-08-01T12:28:00Z",
+      "updated_at": "2023-08-01T12:28:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "1d997c2b-1e46-4192-b31c-7c9e424a2512",
+    "fields": {
+      "created_at": "2023-08-01T12:03:00Z",
+      "updated_at": "2023-08-01T12:03:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 30,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "1e8c5a85-6669-4653-9801-26f06856289b",
+    "fields": {
+      "created_at": "2023-08-01T12:04:00Z",
+      "updated_at": "2023-08-01T12:04:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "223ca4aa-a569-48e7-add8-df3dedca62ae",
+    "fields": {
+      "created_at": "2023-08-01T12:10:00Z",
+      "updated_at": "2023-08-01T12:10:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "2339bb95-237d-4526-9ac5-288f9abc2cf6",
+    "fields": {
+      "created_at": "2023-08-01T12:13:00Z",
+      "updated_at": "2023-08-01T12:13:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "2354c5d1-80f3-4c82-bebf-b7bbcdbce677",
+    "fields": {
+      "created_at": "2023-08-01T12:20:00Z",
+      "updated_at": "2023-08-01T12:20:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "2af87e54-e8d5-417f-a0ce-c958f7ed1fbd",
+    "fields": {
+      "created_at": "2023-08-01T12:28:00Z",
+      "updated_at": "2023-08-01T12:28:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "2ee0e475-13e3-4a76-91b8-97d5989840a7",
+    "fields": {
+      "created_at": "2023-08-01T12:22:00Z",
+      "updated_at": "2023-08-01T12:22:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "31b968dc-c0c1-46ef-be5a-f2f1a72a3091",
+    "fields": {
+      "created_at": "2023-08-01T12:20:00Z",
+      "updated_at": "2023-08-01T12:20:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "326f8384-3bf0-4ac4-8b06-efe7281985bc",
+    "fields": {
+      "created_at": "2023-08-01T12:26:00Z",
+      "updated_at": "2023-08-01T12:26:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "3385ba42-d6b2-42e7-ab5f-53fcc6c7d801",
+    "fields": {
+      "created_at": "2023-08-01T12:08:00Z",
+      "updated_at": "2023-08-01T12:08:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "3755500b-2ed2-4b08-a459-0fbe1722ba0e",
+    "fields": {
+      "created_at": "2023-08-01T12:27:00Z",
+      "updated_at": "2023-08-01T12:27:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "3b435e03-aa1f-4700-9376-e015e3134dd8",
+    "fields": {
+      "created_at": "2023-08-01T12:06:00Z",
+      "updated_at": "2023-08-01T12:06:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "3c516c3e-b4c4-4468-b408-fc0ce5dfdb5b",
+    "fields": {
+      "created_at": "2023-08-01T12:19:00Z",
+      "updated_at": "2023-08-01T12:19:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "3f147c9c-1323-4fd0-af89-fe3099fb4b03",
+    "fields": {
+      "created_at": "2023-08-01T12:07:00Z",
+      "updated_at": "2023-08-01T12:07:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "3f24c656-fda0-4402-9b04-7ee4deeb5982",
+    "fields": {
+      "created_at": "2023-08-01T12:05:00Z",
+      "updated_at": "2023-08-01T12:05:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "4158664f-d6d1-4871-9b0b-acd91cf7a2a5",
+    "fields": {
+      "created_at": "2023-08-01T12:16:00Z",
+      "updated_at": "2023-08-01T12:16:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "42e3bbbf-afe9-461a-88af-50d87861e6ca",
+    "fields": {
+      "created_at": "2023-08-01T12:15:00Z",
+      "updated_at": "2023-08-01T12:15:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "45fc1340-3a1f-45c9-bbc0-2b5d46c322bd",
+    "fields": {
+      "created_at": "2023-08-01T12:27:00Z",
+      "updated_at": "2023-08-01T12:27:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "4a5bd1dc-068b-4fd3-9d2a-ec7c3e3593f1",
+    "fields": {
+      "created_at": "2023-08-01T12:17:00Z",
+      "updated_at": "2023-08-01T12:17:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "4b6345c1-56c7-4286-9cb7-d65f7c4442ae",
+    "fields": {
+      "created_at": "2023-08-01T12:02:00Z",
+      "updated_at": "2023-08-01T12:02:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "4d676ad5-b342-4674-bcdf-be45c7e53bd1",
+    "fields": {
+      "created_at": "2023-08-01T12:16:00Z",
+      "updated_at": "2023-08-01T12:16:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "4fafd3f2-189d-4bbd-b965-4dc50a1d556e",
+    "fields": {
+      "created_at": "2023-08-01T12:21:00Z",
+      "updated_at": "2023-08-01T12:21:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "4ffb1d5e-47ba-4a97-a739-54199d1e8bf3",
+    "fields": {
+      "created_at": "2023-08-01T12:01:00Z",
+      "updated_at": "2023-08-01T12:01:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "51656ad7-7161-486a-94d0-4e83861fbebd",
+    "fields": {
+      "created_at": "2023-08-01T12:11:00Z",
+      "updated_at": "2023-08-01T12:11:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "543f4fff-d334-440e-ba9e-da4edabe3a07",
+    "fields": {
+      "created_at": "2023-08-01T12:05:00Z",
+      "updated_at": "2023-08-01T12:05:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "562f7fce-da35-4c34-aae2-bfbe2ad2c43d",
+    "fields": {
+      "created_at": "2023-08-01T12:23:00Z",
+      "updated_at": "2023-08-01T12:23:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "57685aeb-f29e-475c-a2fb-e7267f5c8987",
+    "fields": {
+      "created_at": "2023-08-01T12:12:00Z",
+      "updated_at": "2023-08-01T12:12:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "58f30100-b91e-4b07-bc72-8c052c56d9bd",
+    "fields": {
+      "created_at": "2023-08-01T12:22:00Z",
+      "updated_at": "2023-08-01T12:22:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "5d83527e-bd20-4a69-b7c7-bf95c26491a4",
+    "fields": {
+      "created_at": "2023-08-01T12:03:00Z",
+      "updated_at": "2023-08-01T12:03:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 30,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "610beab6-88f0-4bb1-b262-5b221cf3c6e2",
+    "fields": {
+      "created_at": "2023-08-01T12:19:00Z",
+      "updated_at": "2023-08-01T12:19:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "627f4886-d985-480a-b199-1bd100334aa4",
+    "fields": {
+      "created_at": "2023-08-01T12:24:00Z",
+      "updated_at": "2023-08-01T12:24:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "6297db19-04da-421a-9d31-d62bd38009df",
+    "fields": {
+      "created_at": "2023-08-01T12:07:00Z",
+      "updated_at": "2023-08-01T12:07:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "68afb788-ba36-4ec6-8990-485fc46fc103",
+    "fields": {
+      "created_at": "2023-08-01T12:29:00Z",
+      "updated_at": "2023-08-01T12:29:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "6a6a1931-75b2-4f40-bb8a-cecb0d74de87",
+    "fields": {
+      "created_at": "2023-08-01T12:29:00Z",
+      "updated_at": "2023-08-01T12:29:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "6b729b54-e135-41ff-90cd-21bba862d797",
+    "fields": {
+      "created_at": "2023-08-01T12:29:00Z",
+      "updated_at": "2023-08-01T12:29:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "6d2180c9-48b1-47d1-82c9-b404f388466f",
+    "fields": {
+      "created_at": "2023-08-01T12:19:00Z",
+      "updated_at": "2023-08-01T12:19:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "6f50b509-b2ae-4c28-878f-840d8b84b4b8",
+    "fields": {
+      "created_at": "2023-08-01T12:26:00Z",
+      "updated_at": "2023-08-01T12:26:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "7549fad7-182e-4280-a328-3ec7dcd4d4be",
+    "fields": {
+      "created_at": "2023-08-01T12:25:00Z",
+      "updated_at": "2023-08-01T12:25:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "7560d057-af79-4349-9808-92b81bee80b0",
+    "fields": {
+      "created_at": "2023-08-01T12:09:00Z",
+      "updated_at": "2023-08-01T12:09:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 31,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "7582253e-c65e-4026-90ff-b335e2cec3a9",
+    "fields": {
+      "created_at": "2023-08-01T12:12:00Z",
+      "updated_at": "2023-08-01T12:12:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "7bbc8aec-5047-4484-a01d-c7d9b75936a8",
+    "fields": {
+      "created_at": "2023-08-01T12:04:00Z",
+      "updated_at": "2023-08-01T12:04:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "7de449bf-125b-4479-8a09-a2f13d766f81",
+    "fields": {
+      "created_at": "2023-08-01T12:23:00Z",
+      "updated_at": "2023-08-01T12:23:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "80026369-9b9d-449a-a651-9b681a0f8c95",
+    "fields": {
+      "created_at": "2023-08-01T12:00:00Z",
+      "updated_at": "2023-08-01T12:00:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "805be9eb-eace-42fd-96f9-5a9931526e88",
+    "fields": {
+      "created_at": "2023-08-01T12:21:00Z",
+      "updated_at": "2023-08-01T12:21:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "83fc9c84-6a3e-4b2b-b75a-dd5e160e4926",
+    "fields": {
+      "created_at": "2023-08-01T12:28:00Z",
+      "updated_at": "2023-08-01T12:28:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "85170364-fcec-417b-a742-38746cb98b50",
+    "fields": {
+      "created_at": "2023-08-01T12:06:00Z",
+      "updated_at": "2023-08-01T12:06:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "85998695-620b-4261-9c1b-36e286c50ef5",
+    "fields": {
+      "created_at": "2023-08-01T12:10:00Z",
+      "updated_at": "2023-08-01T12:10:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "86b09a7f-e621-4560-8860-e2762beb6f10",
+    "fields": {
+      "created_at": "2023-08-01T12:25:00Z",
+      "updated_at": "2023-08-01T12:25:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "86e4daf5-c1f9-4072-8644-c4b78452cd5c",
+    "fields": {
+      "created_at": "2023-08-01T12:14:00Z",
+      "updated_at": "2023-08-01T12:14:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "8b757aa0-c96f-4422-ba29-ca17bb3b187f",
+    "fields": {
+      "created_at": "2023-08-01T12:00:00Z",
+      "updated_at": "2023-08-01T12:00:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "8bab6168-4066-4c38-bcbc-0c25c9306e29",
+    "fields": {
+      "created_at": "2023-08-01T12:09:00Z",
+      "updated_at": "2023-08-01T12:09:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 31,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "8c0ee1dd-fe22-44e8-be26-7f6c7b1da383",
+    "fields": {
+      "created_at": "2023-08-01T12:14:00Z",
+      "updated_at": "2023-08-01T12:14:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "8d2734ee-c0cf-49ca-afff-515498f2decd",
+    "fields": {
+      "created_at": "2023-08-01T12:11:00Z",
+      "updated_at": "2023-08-01T12:11:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "8d836619-074e-49dd-be7b-571bc8615189",
+    "fields": {
+      "created_at": "2023-08-01T12:15:00Z",
+      "updated_at": "2023-08-01T12:15:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "8e59af62-94ca-42f7-ae0f-70168755a24c",
+    "fields": {
+      "created_at": "2023-08-01T12:23:00Z",
+      "updated_at": "2023-08-01T12:23:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "90c8c218-dca7-4fb7-a990-fb5b334a959c",
+    "fields": {
+      "created_at": "2023-08-01T12:26:00Z",
+      "updated_at": "2023-08-01T12:26:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "91e400aa-f9c7-4154-b499-6be473c9aae7",
+    "fields": {
+      "created_at": "2023-08-01T12:24:00Z",
+      "updated_at": "2023-08-01T12:24:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "928e676a-5f44-46dd-9d90-0baf3928f7f8",
+    "fields": {
+      "created_at": "2023-08-01T12:18:00Z",
+      "updated_at": "2023-08-01T12:18:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "93830385-afab-4e0e-8993-0474807e7477",
+    "fields": {
+      "created_at": "2023-08-01T12:27:00Z",
+      "updated_at": "2023-08-01T12:27:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "93effc4d-681a-4353-95b3-6a58712abbdb",
+    "fields": {
+      "created_at": "2023-08-01T12:18:00Z",
+      "updated_at": "2023-08-01T12:18:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "97dcf3a3-5f94-465c-9e77-de7582f16769",
+    "fields": {
+      "created_at": "2023-08-01T12:06:00Z",
+      "updated_at": "2023-08-01T12:06:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "99771a0c-7205-4f65-8db0-011603804ba2",
+    "fields": {
+      "created_at": "2023-08-01T12:17:00Z",
+      "updated_at": "2023-08-01T12:17:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "9ef6365c-c609-43dc-a0be-8355e0a053eb",
+    "fields": {
+      "created_at": "2023-08-01T12:22:00Z",
+      "updated_at": "2023-08-01T12:22:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "a7c6bc9e-fed1-4706-8b8a-3aa3a3a76829",
+    "fields": {
+      "created_at": "2023-08-01T12:11:00Z",
+      "updated_at": "2023-08-01T12:11:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "a8c906ae-8807-44c5-957e-29f1f945685f",
+    "fields": {
+      "created_at": "2023-08-01T12:28:00Z",
+      "updated_at": "2023-08-01T12:28:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "a92b1bba-78bb-4d6d-be16-ca3e05c02fac",
+    "fields": {
+      "created_at": "2023-08-01T12:20:00Z",
+      "updated_at": "2023-08-01T12:20:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "aa3a2077-ff6b-4459-8134-3c0f46dfda28",
+    "fields": {
+      "created_at": "2023-08-01T12:13:00Z",
+      "updated_at": "2023-08-01T12:13:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "b401970f-6fcb-4802-ac58-a15def7b0e28",
+    "fields": {
+      "created_at": "2023-08-01T12:11:00Z",
+      "updated_at": "2023-08-01T12:11:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "b4b28816-3f5c-464d-807f-57393c15d135",
+    "fields": {
+      "created_at": "2023-08-01T12:25:00Z",
+      "updated_at": "2023-08-01T12:25:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "b662ef02-b5e6-4d0a-b37b-df40534dc15b",
+    "fields": {
+      "created_at": "2023-08-01T12:23:00Z",
+      "updated_at": "2023-08-01T12:23:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "b851ffd5-8fcc-49cb-a285-de4bf9880370",
+    "fields": {
+      "created_at": "2023-08-01T12:20:00Z",
+      "updated_at": "2023-08-01T12:20:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "b8b9abd1-4e0b-4078-a8f2-c6911fea39e9",
+    "fields": {
+      "created_at": "2023-08-01T12:25:00Z",
+      "updated_at": "2023-08-01T12:25:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "ba67412b-c1fe-4c1f-a79a-7b183407a8aa",
+    "fields": {
+      "created_at": "2023-08-01T12:16:00Z",
+      "updated_at": "2023-08-01T12:16:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "bf253797-439b-4b78-adb8-9879321fd5ab",
+    "fields": {
+      "created_at": "2023-08-01T12:07:00Z",
+      "updated_at": "2023-08-01T12:07:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "bfcb9373-6b2c-409f-a035-bdf20a924fc7",
+    "fields": {
+      "created_at": "2023-08-01T12:13:00Z",
+      "updated_at": "2023-08-01T12:13:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "bfcc926b-781d-43bb-b20d-67079e77e95b",
+    "fields": {
+      "created_at": "2023-08-01T12:06:00Z",
+      "updated_at": "2023-08-01T12:06:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c225783e-b4ef-4bd5-b332-c5f775a03194",
+    "fields": {
+      "created_at": "2023-08-01T12:02:00Z",
+      "updated_at": "2023-08-01T12:02:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c386cde1-348a-4d0c-8226-b49fb06b48f6",
+    "fields": {
+      "created_at": "2023-08-01T12:14:00Z",
+      "updated_at": "2023-08-01T12:14:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c60d28d2-daa2-42de-895b-60bda37cf7ed",
+    "fields": {
+      "created_at": "2023-08-01T12:08:00Z",
+      "updated_at": "2023-08-01T12:08:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c6a73bc4-96b4-4bc1-a719-cf5f01aa006a",
+    "fields": {
+      "created_at": "2023-08-01T12:04:00Z",
+      "updated_at": "2023-08-01T12:04:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "00d44549-f600-4b0f-9a32-66aa8d281d3d",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c79bc6a4-e8d6-4d64-8521-7a1e935a3229",
+    "fields": {
+      "created_at": "2023-08-01T12:29:00Z",
+      "updated_at": "2023-08-01T12:29:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c8aa203d-6534-4b7a-b0da-317474d7c030",
+    "fields": {
+      "created_at": "2023-08-01T12:12:00Z",
+      "updated_at": "2023-08-01T12:12:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c9462885-937b-4796-9066-e4fd094da460",
+    "fields": {
+      "created_at": "2023-08-01T12:03:00Z",
+      "updated_at": "2023-08-01T12:03:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 30,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "c9a3f45f-0d6d-4c23-b31f-5cf9e49ee8b8",
+    "fields": {
+      "created_at": "2023-08-01T12:19:00Z",
+      "updated_at": "2023-08-01T12:19:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 31,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "cb2c70ad-f36c-42ff-8bfb-19fdfd80cc67",
+    "fields": {
+      "created_at": "2023-08-01T12:21:00Z",
+      "updated_at": "2023-08-01T12:21:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "d2d39517-c7cc-4c52-b8dd-cba230290702",
+    "fields": {
+      "created_at": "2023-08-01T12:05:00Z",
+      "updated_at": "2023-08-01T12:05:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "d389f624-b284-4451-a69e-49d34e7f98d2",
+    "fields": {
+      "created_at": "2023-08-01T12:08:00Z",
+      "updated_at": "2023-08-01T12:08:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "d444dd69-c667-4ea2-9589-c88fb528001d",
+    "fields": {
+      "created_at": "2023-08-01T12:17:00Z",
+      "updated_at": "2023-08-01T12:17:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "d5437e67-0949-4ba9-985c-7282b66d8272",
+    "fields": {
+      "created_at": "2023-08-01T12:15:00Z",
+      "updated_at": "2023-08-01T12:15:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "d96fafb3-7511-48bf-bc95-029ab04c63c2",
+    "fields": {
+      "created_at": "2023-08-01T12:01:00Z",
+      "updated_at": "2023-08-01T12:01:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "db83447c-89ef-4aa4-86cf-d84334e8ad4f",
+    "fields": {
+      "created_at": "2023-08-01T12:18:00Z",
+      "updated_at": "2023-08-01T12:18:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "ddabd48a-fbbe-4dd5-9c21-73eeba1c01f1",
+    "fields": {
+      "created_at": "2023-08-01T12:14:00Z",
+      "updated_at": "2023-08-01T12:14:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "e1c18358-528f-47ab-9ed6-4f6b4626f1aa",
+    "fields": {
+      "created_at": "2023-08-01T12:13:00Z",
+      "updated_at": "2023-08-01T12:13:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "e3b92a03-5442-4835-a4d4-788862e3f5bc",
+    "fields": {
+      "created_at": "2023-08-01T12:01:00Z",
+      "updated_at": "2023-08-01T12:01:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "e60d09fb-c91d-4895-9476-0d42cc157b24",
+    "fields": {
+      "created_at": "2023-08-01T12:07:00Z",
+      "updated_at": "2023-08-01T12:07:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 31
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "e66bf7ea-4dc8-462d-bde6-3260b50370d1",
+    "fields": {
+      "created_at": "2023-08-01T12:26:00Z",
+      "updated_at": "2023-08-01T12:26:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "e895cd32-454c-48e5-a3fd-03ded6d01a2d",
+    "fields": {
+      "created_at": "2023-08-01T12:08:00Z",
+      "updated_at": "2023-08-01T12:08:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "edf655a1-b708-4091-bf91-c9ee0978bbf6",
+    "fields": {
+      "created_at": "2023-08-01T12:22:00Z",
+      "updated_at": "2023-08-01T12:22:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 29,
+      "production_goal": 29
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "ee6bc9cc-e719-4573-8089-379ed5c94adc",
+    "fields": {
+      "created_at": "2023-08-01T12:00:00Z",
+      "updated_at": "2023-08-01T12:00:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "f4d0cafe-a3a3-4276-9502-93735b995153",
+    "fields": {
+      "created_at": "2023-08-01T12:18:00Z",
+      "updated_at": "2023-08-01T12:18:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "f78f67cb-3af9-4f03-8c57-b9992c32907a",
+    "fields": {
+      "created_at": "2023-08-01T12:15:00Z",
+      "updated_at": "2023-08-01T12:15:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "f7ae983a-2da9-4b7b-a566-922bdbe8fe8a",
+    "fields": {
+      "created_at": "2023-08-01T12:09:00Z",
+      "updated_at": "2023-08-01T12:09:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 30
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "f8c12080-3e4f-4698-a86c-f87979511aa4",
+    "fields": {
+      "created_at": "2023-08-01T12:10:00Z",
+      "updated_at": "2023-08-01T12:10:00Z",
+      "factory": "10a40942-1671-4607-aa99-4fbf8c9eefcd",
+      "sprocket": "b56a545e-28e4-4891-a67d-86dc04a10a27",
+      "production_actual": 32,
+      "production_goal": 32
+    }
+  },
+  {
+    "model": "sprocket.sprocketfactoryproduction",
+    "pk": "fff5702b-7712-40de-815d-a71be4845fd4",
+    "fields": {
+      "created_at": "2023-08-01T12:09:00Z",
+      "updated_at": "2023-08-01T12:09:00Z",
+      "factory": "3575c883-b97a-49c9-8d40-757c40fd2eb4",
+      "sprocket": "10d8e09b-77dd-462d-819f-48fb5ab23634",
+      "production_actual": 31,
+      "production_goal": 30
+    }
+  }
+]
