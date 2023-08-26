@@ -1,28 +1,28 @@
 services:
   database:
-    container_name: sprocket-database-python-bottle
+    container_name: sprocket-database-python-flask
     image: postgres:13
     restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/
-      - ./server/python-bottle/src/core/database_init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./server/python-flask/src/database_init.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=python-bottle
+      - POSTGRES_DB=python-flask
     ports:
       - "5432:5432"
   api:
-    container_name: sprocket-api-python-bottle
-    image: sprocket-python-bottle
-    build: ./server/python-bottle
+    container_name: sprocket-api-python-flask
+    image: sprocket-python-flask
+    build: ./server/python-flask
     restart: always
     command: >
       sh -c "python app.py"
     ports:
       - 8080:8080
     env_file:
-      - ./server/python-bottle/env/.env.dev
+      - ./server/python-flask/env/.env.dev
     depends_on:
       - database
 volumes:

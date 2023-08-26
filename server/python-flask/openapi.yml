@@ -1,0 +1,360 @@
+openapi: 3.0.0
+info:
+  title: "Sprockets REST API"
+  description: "Sprockets, Factories and Production"
+  version: "1.0.0"
+servers:
+  - url: "/api"
+components:
+  schemas:
+    Sprocket:
+      type: "object"
+      required:
+        - teeth
+        - pitch_diameter
+        - outside_diameter
+        - pitch
+      properties:
+        id:
+          type: "string"
+          format: "uuid"
+        date_added:
+          type: "string"
+          format: "date-time"
+        date_updated:
+          type: "string"
+          format: "date-time"
+        teeth:
+          type: "integer"
+        pitch_diameter:
+          type: "number"
+          multipleOf: 0.01
+        outside_diameter:
+          type: "number"
+          multipleOf: 0.01
+        pitch:
+          type: "number"
+          multipleOf: 0.01
+        description:
+          type: "string"
+        is_active:
+          type: "boolean"
+    SprocketFactory:
+      type: "object"
+      required:
+        - name
+      properties:
+        id:
+          type: "string"
+          format: "uuid"
+        date_added:
+          type: "string"
+          format: "date-time"
+        date_updated:
+          type: "string"
+          format: "date-time"
+        name:
+          type: "string"
+        description:
+          type: "string"
+        is_active:
+          type: "boolean"
+    SprocketFactoryProduction:
+      type: "object"
+      required:
+        - factory
+        - sprocket
+        - production_actual
+        - production_goal
+      properties:
+        id:
+          type: "string"
+          format: "uuid"
+        date_added:
+          type: "string"
+          format: "date-time"
+        date_updated:
+          type: "string"
+          format: "date-time"
+        factory:
+          type: "string"
+          format: "uuid"
+        sprocket:
+          type: "string"
+          format: "uuid"
+        production_actual:
+          type: "integer"
+        production_goal:
+          type: "integer"
+  parameters:
+    id:
+      name: "id"
+      description: "ID of record"
+      in: path
+      required: True
+      schema:
+        type: "string"
+        format: "uuid"
+  securitySchemes:
+    jwt:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      x-bearerInfoFunc: src.security.decode_token
+paths:
+paths:
+  /auth/{user_code}:
+    get:
+      summary: Return JWT token
+      tags:
+        - "Authentication"
+      operationId: src.security.generate_token
+      parameters:
+      - name: user_code
+        description: User unique identifier
+        in: path
+        required: true
+        example: admin
+        schema:
+          type: string
+      responses:
+        '200':
+          description: JWT token
+          content:
+            'text/plain':
+              schema:
+                type: string
+  /sprockets:
+    get:
+      operationId: "src.views.sprocket.get_all"
+      tags:
+        - "Sprocket"
+      summary: "List all sprockets"
+      security:
+      - jwt: ['secret']
+      responses:
+        "200":
+          description: "Successfully read sprockets list"
+    post:
+      operationId: "src.views.sprocket.create"
+      tags:
+        - "Sprocket"
+      summary: "Create a sprocket"
+      security:
+      - jwt: ['secret']
+      requestBody:
+          description: "Sprocket to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "sprocket"
+                $ref: "#/components/schemas/Sprocket"
+      responses:
+        "201":
+          description: "Successfully created sprocket"
+  /sprockets/{id}:
+    get:
+      operationId: "src.views.sprocket.get_one"
+      tags:
+        - Sprocket
+      summary: "Read one sprocket"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "200":
+          description: "Successfully read sprocket"
+    put:
+      tags:
+        - Sprocket
+      operationId: "src.views.sprocket.update"
+      summary: "Update a sprocket"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "200":
+          description: "Successfully updated sprocket"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "sprocket"
+              $ref: "#/components/schemas/Sprocket"
+    delete:
+      tags:
+        - Sprocket
+      operationId: "src.views.sprocket.delete"
+      summary: "Delete a sprocket"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "204":
+          description: "Successfully deleted sprocket"
+  /factories:
+    get:
+      operationId: "src.views.sprocket_factory.get_all"
+      tags:
+        - "SprocketFactory"
+      summary: "List all factories"
+      responses:
+        "200":
+          description: "Successfully read factories list"
+    post:
+      operationId: "src.views.sprocket_factory.create"
+      tags:
+        - "SprocketFactory"
+      summary: "Create a sprocket factory"
+      requestBody:
+          description: "SprocketFactory to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "sprocket_factory"
+                $ref: "#/components/schemas/SprocketFactory"
+      responses:
+        "201":
+          description: "Successfully created sprocket factory"
+  /factories/{id}:
+    get:
+      operationId: "src.views.sprocket_factory.get_one"
+      tags:
+        - SprocketFactory
+      summary: "Read one sprocket factory"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "200":
+          description: "Successfully read sprocket factory"
+    put:
+      tags:
+        - SprocketFactory
+      operationId: "src.views.sprocket_factory.update"
+      summary: "Update a sprocket factory"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "200":
+          description: "Successfully updated sprocket factory"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "sprocket_factory"
+              $ref: "#/components/schemas/SprocketFactory"
+    delete:
+      tags:
+        - SprocketFactory
+      operationId: "src.views.sprocket_factory.delete"
+      summary: "Delete a sprocket factory"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "204":
+          description: "Successfully deleted sprocket factory"
+  /production:
+    get:
+      operationId: "src.views.sprocket_factory_production.get_all"
+      tags:
+        - "SprocketFactoryProduction"
+      summary: "List all sprockets factories production"
+      security:
+      - jwt: ['secret']
+      responses:
+        "200":
+          description: "Successfully read sprockets factories production"
+    post:
+      operationId: "src.views.sprocket_factory_production.create"
+      tags:
+        - "SprocketFactoryProduction"
+      summary: "Create a sprocket factory production record"
+      security:
+      - jwt: ['secret']
+      requestBody:
+          description: "SprocketFactoryProduction to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "sprocket_factory_production"
+                $ref: "#/components/schemas/SprocketFactoryProduction"
+      responses:
+        "201":
+          description: "Successfully created sprocket factory production record"
+  /production/byFactory/{id}:
+    get:
+      operationId: "src.views.sprocket_factory_production.get_all_by_factory"
+      tags:
+        - "SprocketFactoryProduction"
+      summary: "List all sprockets factories production by Factory"
+      security:
+      - jwt: ['secret']
+      responses:
+        "200":
+          description: "Successfully read sprockets factories production by Factory"
+  /production/bySprocket/{id}:
+    get:
+      operationId: "src.views.sprocket_factory_production.get_all_by_sprocket"
+      tags:
+        - "SprocketFactoryProduction"
+      summary: "List all sprockets factories production by Sprocket"
+      security:
+      - jwt: ['secret']
+      responses:
+        "200":
+          description: "Successfully read sprockets factories production by Sprocket"
+  /production/{id}:
+    get:
+      operationId: "src.views.sprocket_factory_production.get_one"
+      tags:
+        - SprocketFactoryProduction
+      summary: "Read one sprocket factory production record"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "200":
+          description: "Successfully read sprocket factory production record"
+    put:
+      tags:
+        - SprocketFactoryProduction
+      operationId: "src.views.sprocket_factory_production.update"
+      summary: "Update a sprocket factory production record"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "200":
+          description: "Successfully updated sprocket factory production record"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "sprocket_factory_production"
+              $ref: "#/components/schemas/SprocketFactoryProduction"
+    delete:
+      tags:
+        - SprocketFactoryProduction
+      operationId: "src.views.sprocket_factory_production.delete"
+      summary: "Delete a sprocket factory production record"
+      security:
+      - jwt: ['secret']
+      parameters:
+        - $ref: "#/components/parameters/id"
+      responses:
+        "204":
+          description: "Successfully deleted sprocket factory production record"

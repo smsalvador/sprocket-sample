@@ -5,6 +5,7 @@ services:
     restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+      - ./server/python-django/src/core/database_init.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
@@ -15,6 +16,7 @@ services:
     container_name: sprocket-api-python-django
     image: sprocket-python-django
     build: ./server/python-django
+    restart: always
     command: >
       sh -c "python manage.py migrate &&
              python manage.py loaddata ./src/fixtures/auth.json --app auth &&
