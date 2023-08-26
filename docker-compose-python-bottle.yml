@@ -1,0 +1,27 @@
+services:
+  database:
+    container_name: sprocket-database-python-bottle
+    image: postgres:13
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=python-bottle
+    ports:
+      - "5432:5432"
+  api:
+    container_name: sprocket-api-python-bottle
+    image: sprocket-python-bottle
+    build: ./server/python-bottle
+    command: >
+      sh -c "python app.py"
+    ports:
+      - 8080:8080
+    env_file:
+      - ./server/python-django/env/.env.dev
+    depends_on:
+      - database
+volumes:
+  postgres_data:
