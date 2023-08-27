@@ -1,0 +1,31 @@
+services:
+  database:
+    container_name: sprocket-database-nodejs-express
+    image: postgres:13
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+      - ./server/nodejs-express/src/core/database_init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=nodejs-express
+    ports:
+      - "5432:5432"
+  api:
+    container_name: sprocket-api-nodejs-express
+    image: sprocket-nodejs-express
+    build: ./server/nodejs-express
+    restart: always
+    command: >
+      sh -c "sleep 10 &&
+             npm run typeorm:migrate:build &&
+             npm run start"
+    ports:
+      - 8080:8080
+    env_file:
+      - ./server/nodejs-express/env/.env.dev
+    depends_on:
+      - database
+volumes:
+  postgres_data:

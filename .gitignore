@@ -78,9 +78,10 @@ nbproject
 # Node.js
 ############################
 
-*/node_modules
-*/.node_history
-*/package-lock.json
+server/*/node_modules
+server/*/build
+
+server/nodejs-*/public
 
 ############################
 # Python

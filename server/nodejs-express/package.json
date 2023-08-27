@@ -1,0 +1,48 @@
+{
+  "name": "sprockets-nodejs-express",
+  "version": "1.0.0",
+  "description": "Sprockets API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "predev": "npm run swagger",
+    "prebuild": "npm run swagger",
+    "build": "tsc",
+    "dev": "concurrently \"nodemon\" \"nodemon -x tsoa spec\"",
+    "swagger": "tsoa spec",
+    "typeorm:migrations": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:generate --pretty --dataSource ./src/core/dataSource.ts ./src/migrations/migration",
+    "typeorm:migrate": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:run --dataSource ./src/core/dataSource.ts",
+    "typeorm:migrate:build": "PG_HOST=localhost NODE_PATH=./build node ./node_modules/.bin/typeorm migration:run --dataSource ./build/core/dataSource.js"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-winston": "^4.2.0",
+    "jsonwebtoken": "^9.0.1",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.13",
+    "swagger-ui-express": "^5.0.0",
+    "tsoa": "^5.1.1",
+    "typeorm": "^0.3.17",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/debug": "^4.1.8",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.5.6",
+    "@types/swagger-ui-express": "^4.1.3",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "tslint": "^6.1.3",
+    "typescript": "^5.2.2"
+  }
+}

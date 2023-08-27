@@ -18,7 +18,8 @@ services:
     build: ./server/python-bottle
     restart: always
     command: >
-      sh -c "python app.py"
+      sh -c "sleep 10 &&
+             python app.py"
     ports:
       - 8080:8080
     env_file:

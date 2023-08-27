@@ -18,7 +18,8 @@ services:
     build: ./server/python-django
     restart: always
     command: >
-      sh -c "python manage.py migrate &&
+      sh -c "sleep 10 &&
+             python manage.py migrate &&
              python manage.py loaddata ./src/fixtures/auth.json --app auth &&
              python manage.py loaddata ./src/fixtures/sprocket.json --app sprocket &&
              python manage.py runserver 0.0.0.0:8080"
