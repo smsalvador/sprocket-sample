@@ -8,7 +8,7 @@ response.content_type = 'application/json'
 
 
 def get_views(app, settings):
-    @app.get(f'/{settings.URL_BASE}/sprocket-factory/{settings.URL_BASE_VERSION}')
+    @app.get(f'/{settings.URL_BASE}/sprockets-factory/{settings.URL_BASE_VERSION}')
     def sprockets_get(db):
         obj = db.query(SprocketFactoryModel).all()
         obj_json = serialize(obj)
